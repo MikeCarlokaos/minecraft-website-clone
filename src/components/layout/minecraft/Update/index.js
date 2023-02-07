@@ -59,6 +59,36 @@ export default class Update extends Component {
       slidesToScroll: 1,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+            initialSlide: 2,
+            arrows: false,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+          },
+        },
+      ],
     };
 
     return (
@@ -75,7 +105,7 @@ export default class Update extends Component {
               New tools, locations, and spaces are yours to explore, thanks to
               our regular updates. Check out the latest.
             </p>
-            <Slider {...settings} className="relative px-[140px]">
+            <Slider {...settings} className="relative md:px-[140px] px-20">
               {UpdateSlide}
             </Slider>
           </div>

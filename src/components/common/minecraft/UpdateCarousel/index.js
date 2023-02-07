@@ -3,11 +3,11 @@ import arrowLink from "../../../../assets/icons/link-arrow.svg";
 
 const UpdateCarousel = ({ coverImg, title, text }) => {
   return (
-    <div className=" w-full p-[30px] bg-white flex">
-      <div className="w-[540px] mr-[30px]">
+    <div className=" w-full p-[30px] bg-white flex flex-col md:flex-row">
+      <div className="w-full md:w-[540px] md:mr-[30px]">
         <img src={coverImg} alt={title} />
       </div>
-      <div className="w-[242px]">
+      <div className="w-full text-center md:w-[242px] md:text-start">
         <div className="pt-5">
           <h2 className="w-full tracking-[1px] text-[28px] leading-[34px] font-bold mb-[20px]">
             {title}

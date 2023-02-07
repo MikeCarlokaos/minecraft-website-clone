@@ -12,6 +12,8 @@ import Unite from "../../components/layout/minecraftDungeons/Unite";
 import Footer from "../../components/layout/nav/Footer";
 import Login from "../../components/layout/nav/Login";
 import Navbar from "../../components/layout/nav/Navbar";
+import opendungeon from "../../assets/icons/hamburger-icon-dungeon.png";
+import closedungeon from "../../assets/icons/hamburger-icon-close-dungeon.png";
 
 const MinecraftDungeons = () => {
   return (
@@ -21,6 +23,8 @@ const MinecraftDungeons = () => {
         <Navbar
           text={"get dungeons"}
           className={"text-black bg-orange-primary shadow-base-button-orange"}
+          openIcon={opendungeon}
+          closeIcon={closedungeon}
         />
       </header>
       <main>

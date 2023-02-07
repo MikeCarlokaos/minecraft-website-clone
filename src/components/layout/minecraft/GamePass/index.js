@@ -4,7 +4,7 @@ import bgGamePass from "../../../../assets/page/minecraft/images/game-pass.webp"
 const GamePass = () => {
   return (
     <section className="w-full h-full text-center bg-base-gray pt-[100px] pb-[70px]">
-      <div className="w-[1140px] my-[16px] mx-auto px-[15px]">
+      <div className="w-full my-[16px] mx-auto px-[15px] md:w-[1140px]">
         <div>
           <img src={bgGamePass} alt="Game Pass" className="" />
         </div>

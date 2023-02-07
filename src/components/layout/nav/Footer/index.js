@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <section className="w-full h-full text-white text-[12px] leading-[14px] bg-body-dark">
       <div className="w-full h-full text-center bg-black pt-[19px] pb-2">
-        <h3 className="w-full h-full text-[16px] leading-[24px] trackinh-[1px] font-bold">
+        <h3 className="w-full h-full text-[16px] leading-[24px] tracking-[1px] font-bold">
           Follow Minecraft
         </h3>
         <div>
@@ -69,8 +69,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-[1140px] h-full mx-auto py-[64px] flex bg-body-dark">
-        <div className="w-[42%] h-full">
+      <div className="w-full h-full py-[64px] flex flex-col-reverse gap-y-10 bg-body-dark md:w-[1140px] md:mx-auto md:flex-row md:gap-y-0">
+        <div className="w-full h-full px-5 flex flex-col items-center mb-5 md:w-[42%] md:px-0 md:text-start md:block md:mb-0">
           <div className="flex">
             <div>
               <img src={mojangLogo} alt="Mojang Logo" />
@@ -97,8 +97,8 @@ const Footer = () => {
             </span>
           </p>
         </div>
-        <div className="w-[58%] h-full flex">
-          <div className="w-1/3 h-full">
+        <div className="w-full h-full px-5 grid grid-cols-2 gap-5 md:w-[58%] md:flex md:px-0 md:gap-0">
+          <div className="w-full h-full md:w-1/3">
             <div>
               <h3 className="text-[14.84px] font-bold leading-[24px] tracking-[1px]">
                 Games
@@ -149,7 +149,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-1/3 h-full">
+          <div className="w-full h-full md:w-1/3">
             <div>
               <h3 className="text-[14.84px] font-bold leading-[24px] tracking-[1px]">
                 Shop
@@ -212,13 +212,13 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="w-full md:w-1/3">
             <img src={esrb} alt="esrb" />
           </div>
         </div>
       </div>
       <div className="w-full h-full bg-footer-dark ">
-        <div className="w-[1140px] h-full mx-auto py-[32px] flex justify-between">
+        <div className="w-full h-full mx-auto py-[32px] px-5 flex flex-col items-center justify-between space-y-2 md:w-[1140px] md:flex-row md:items-start md:px-0 md:space-y-0">
           <div>
             <label
               htmlFor="language"
@@ -228,7 +228,7 @@ const Footer = () => {
             </label>
           </div>
           <div>
-            <ul className="flex text-[12px] leading-[24px] font-sans space-x-4">
+            <ul className="flex text-[12px] leading-[24px] font-sans space-x-2 whitespace-nowrap md:space-x-4 ">
               <li>
                 <a href="blank">Privacy and Cookies</a>
               </li>

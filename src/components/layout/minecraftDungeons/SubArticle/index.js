@@ -10,8 +10,10 @@ const SubArticle = () => {
           Expand your world
         </h3>
       </div>
-      <div className={`w-full h-full flex items-center px-20 py-10 `}>
-        <div className="w-1/2 h-stretch px-10 flex flex-col content-center">
+      <div
+        className={`w-full h-full flex flex-col-reverse items-center px-5 py-10 gap-y-3 md:flex-row md:px-20 md:gap-y-0`}
+      >
+        <div className="w-full h-stretch px-10 flex flex-col content-center md:w-1/2">
           <h3 className="text-[28px] tracking-[1px] leading-[34px] font-bold">
             find a new perspective
           </h3>
@@ -31,7 +33,7 @@ const SubArticle = () => {
             join the community
           </a>
         </div>
-        <div className="w-1/2 px-7 ">
+        <div className="w-full px-7 md:w-1/2">
           <img src={img1} alt="community" />
         </div>
       </div>

@@ -6,8 +6,8 @@ import dropbox from "../../../../assets/page/community/image/feedback/dropbox.we
 const Feedback = () => {
   return (
     <section className="w-full h-full" id="feedback">
-      <div className="w-[1140px] px-[15px] mx-auto py-32">
-        <div className="w-full h-full flex items-center justify-center px-32 space-x-5">
+      <div className="w-full px-[15px] mx-auto py-16 md:w-[1140px] md:py-32">
+        <div className="w-full h-full flex flex-col items-center justify-center px-32 space-x-5 md:flex-row">
           <div>
             <img src={house} alt="house" className="w-[190px] h-[190px]" />
           </div>
@@ -30,7 +30,7 @@ const Feedback = () => {
               feedback
             </h3>
           </div>
-          <div className="w-full h-full flex items-center justify-center space-x-10">
+          <div className="w-full h-full flex flex-col items-center justify-center md:flex-row space-y-10 md:space-x-10">
             <div className="w-[350px] bg-ash px-4 pb-5 flex flex-col items-center">
               <img src={spider} alt="spider" className="w-[205px]" />
               <h3 className="font-bold text-[28px] leading-[34px] tracking-[1px]">

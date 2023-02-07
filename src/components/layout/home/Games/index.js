@@ -72,9 +72,8 @@ export default class Games extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             arrows: false,
           },
         },
@@ -99,7 +98,7 @@ export default class Games extends Component {
             <h2 className="w-full text-center tracking-[1px] text-[28px] leading-[34px] font-bold mb-[50px]">
               Explore minecraft games
             </h2>
-            <Slider {...settings} className="relative md:px-[125px] ">
+            <Slider {...settings} className="relative px-4 md:px-[125px] ">
               {GameSlide}
             </Slider>
           </div>

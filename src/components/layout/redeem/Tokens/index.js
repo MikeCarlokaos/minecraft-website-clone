@@ -16,8 +16,8 @@ import Enderwood from "../Enderwood";
 
 const Tokens = () => {
   return (
-    <section className="w-full h-full bg-ash-tertiary ">
-      <div className="w-[920px] h-full py-16 mx-auto">
+    <section className="w-full h-full bg-ash-tertiary  px-12 md:px-0">
+      <div className="w-full h-full py-16 mx-auto md:w-[920px]">
         <div className="w-full h-full flex items-center justify-center mb-20">
           <h3 className="w-[500px] text-center text-white text-[36px] tracking-[1px] leading-[40px] font-bold">
             redeem your minecraft tokens here

@@ -3,6 +3,8 @@ import Footer from "../../components/layout/nav/Footer";
 import Login from "../../components/layout/nav/Login";
 import Navbar from "../../components/layout/nav/Navbar";
 import creeper from "../../assets/page/nopage/creeper.webp";
+import open from "../../assets/icons/hamburger-icon.webp";
+import close from "../../assets/icons/hamburger-icon-close.png";
 
 const NoPage = () => {
   return (
@@ -12,6 +14,8 @@ const NoPage = () => {
         <Navbar
           text={"get minecraft"}
           className={"bg-dark-green shadow-base-button"}
+          openIcon={open}
+          closeIcon={close}
         />
       </header>
       <main className="bg-white">

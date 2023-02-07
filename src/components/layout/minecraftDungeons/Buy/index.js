@@ -28,7 +28,7 @@ const Buy = () => {
         <select
           value={optionValue}
           onChange={handleChange}
-          className="w-[600px] h-10 bg-orange-primary text-light-brown font-bold uppercase pl-5 border-2 border-orange-tertiary"
+          className="w-full h-10 bg-orange-primary text-light-brown font-bold uppercase pl-5 border-2 border-orange-tertiary md:w-[600px]"
         >
           <option
             value=""

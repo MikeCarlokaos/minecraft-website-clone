@@ -5,7 +5,7 @@ import arrowLink from "../../../../assets/icons/link-arrow-blue.svg";
 const Wallpaper = () => {
   return (
     <section className="w-full h-full bg-light-blue-secondary">
-      <div className="w-[1140px] h-full mx-auto px-[15px] py-12">
+      <div className="w-full md:w-[1140px] h-full mx-auto px-[15px] py-12">
         <div>
           <img src={bg} alt="Content SnapShot" />
         </div>

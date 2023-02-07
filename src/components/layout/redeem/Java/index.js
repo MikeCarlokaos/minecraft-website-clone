@@ -3,11 +3,11 @@ import java from "../../../../assets/page/redeem/image/redeem-art-minecraft.jpg"
 
 const Java = () => {
   return (
-    <div className="w-full h-full p-[30px] flex items-center bg-pastel-white">
-      <div className="w-1/3 h-full p-5">
+    <div className="w-full h-full p-[30px] flex flex-col items-center bg-pastel-white md:flex-row">
+      <div className="w-full h-full flex justify-center p-5 md:w-1/3">
         <img src={java} alt="Minecraft Java" />
       </div>
-      <div className="w-2/3 h-full flex flex-col gap-2 p-3">
+      <div className="w-full h-full flex flex-col gap-2 p-3 md:w-2/3">
         <h3 className="text-[28px] tracking-[1px] leading-[34px] font-bold">
           redeem minecraft: java edition
         </h3>

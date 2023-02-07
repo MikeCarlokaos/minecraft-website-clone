@@ -46,9 +46,21 @@ const SampleNextArrow = ({ onClick }) => {
 export default class HeroCarousel extends Component {
   state = { isActive: false };
 
-  handleToggle = () => {
-    this.setState({ isActive: !this.state.isActive });
-  };
+  // handleToggle = () => {
+  //   this.setState({ isActive: !this.state.isActive });
+  // };
+
+  constructor(props) {
+    super(props);
+    this.play = this.play.bind(this);
+    this.pause = this.pause.bind(this);
+  }
+  play() {
+    this.slider.slickPlay();
+  }
+  pause() {
+    this.slider.slickPause();
+  }
 
   render() {
     const isActive = this.state.isActive;
@@ -59,7 +71,7 @@ export default class HeroCarousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
 
@@ -68,7 +80,7 @@ export default class HeroCarousel extends Component {
           style={{
             position: "absolute",
             bottom: "50px",
-            left: "46.25%",
+            left: "45.3%",
             zIndex: "20",
             display: "flex",
             height: "25px",
@@ -76,43 +88,51 @@ export default class HeroCarousel extends Component {
             alignItems: "center",
           }}
         >
-          <ul className="w-16 h-full flex items-center bg-black opacity-[0.7] px-2 space-x-1">
-            {dots}
-          </ul>
-          <div
-            className="h-[25px] bg-black opacity-[0.7] pl-1 pr-3 flex items-center cursor-pointer"
-            onClick={this.handleToggle}
-          >
-            <svg
-              width="12"
-              height="14"
-              fill="none"
-              viewBox="0 0 12 14"
-              className={`bg-black ${isActive ? "hidden" : ""}`}
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M4 0H0v14h4V0zm8 0H8v14h4V0z"
-                fill="#888"
-              ></path>
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M4 0H0v14h4V0zm8 0H8v14h4V0z"
-                fill="#FFB054"
-              ></path>
-            </svg>
-
-            <svg
-              width="10"
-              height="13"
-              fill="none"
-              viewBox="0 0 11 13"
-              className={isActive ? "" : "hidden"}
-            >
-              <path d="M0 .5l10 6-10 6V.5z" fill="#FFB054"></path>
-            </svg>
+          <div className="flex flex-col items-center md:flex-row">
+            <ul className="w-16 h-full flex  items-center bg-black opacity-[0.7] px-2 py-2 space-x-1">
+              {dots}
+            </ul>
+            <div className="flex items-center">
+              <div
+                className=" h-[25px] bg-black opacity-[0.7] px-2 pt-1.5 flex cursor-pointer hover:brightness-50 md:pl-1 md:pr-3 md;pt-0"
+                onClick={this.pause}
+              >
+                <svg
+                  width="12"
+                  height="13"
+                  fill="none"
+                  viewBox="0 0 11 13"
+                  className={`bg-black `}
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M4 0H0v14h4V0zm8 0H8v14h4V0z"
+                    fill="#888"
+                  ></path>
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M4 0H0v14h4V0zm8 0H8v14h4V0z"
+                    fill="#FFB054"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                className="h-[25px] bg-black opacity-[0.7] px-2 flex items-center cursor-pointer hover:brightness-50 md:pl-1 md:pr-3"
+                onClick={this.play}
+              >
+                <svg
+                  width="12"
+                  height="13"
+                  fill="none"
+                  viewBox="0 0 11 12"
+                  className={`bg-black `}
+                >
+                  <path d="M0 .5l10 6-10 6V.5z" fill="#FFB054"></path>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       ),

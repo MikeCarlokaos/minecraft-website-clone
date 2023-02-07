@@ -9,7 +9,7 @@ const Disccusions = () => {
       className="w-full h-full bg-cover py-16"
       id="discussion"
     >
-      <div className="w-[600px] h-full mx-auto text-white text-center">
+      <div className="w-full h-full mx-auto text-white text-center px-5 md:w-[600px] md:px-0">
         <div>
           <h3 className="w-full text-center tracking-[1px] text-[28px] leading-[34px] font-bold">
             discussions & help

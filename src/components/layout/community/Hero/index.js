@@ -25,11 +25,11 @@ const Hero = () => {
         style={{ backgroundImage: `url(${bannerBg})` }}
         className="relative w-full h-screen bg-cover"
       >
-        <div className="absolute top-72 left-1/2 -translate-x-1/2 w-[550px] text-center text-white">
-          <h1 className="text-[36px] tracking-[1px] leading-[40px] font-bold">
+        <div className="absolute top-40 left-1/2 -translate-x-1/2 w-full px-6 text-center text-white md:top-72 md:w-[550px] md:px-0">
+          <h1 className="text-3xl tracking-[1px] leading-[40px] font-bold mb-5 md:text-[36px] md:mb-0">
             welcome to the minecraft community
           </h1>
-          <p className="text-[18px] leading-[26px]">
+          <p className="text-xl leading-[26px] md:text-[18px]">
             Our Minecraft community never stops amazing us with their
             creativity. On this page, we gather some of their best work—videos,
             builds, and more.
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
       </div>
       <nav className={`w-full h-full bg-white ${stickyClass}`}>
-        <ul className="w-full h-[82px] px-24 border-b-2 border-ash-secondary grid grid-cols-6 items-center justify-items-center uppercase text-[12px] leading-[18px] font-bold">
+        <ul className="w-full h-[82px] px-4 border-b-2 border-ash-secondary grid grid-cols-3  items-center justify-items-center uppercase text-xs md:text-[12px] leading-[18px] font-bold whitespace-nowrap md:px-24 md:grid-cols-6">
           <li className="navlink h-full w-full flex items-center px-10">
             <HashLink smooth to="/community#news">
               news

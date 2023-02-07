@@ -10,6 +10,8 @@ import Guide from "../../components/layout/minecraft/Guide";
 import GamePass from "../../components/layout/minecraft/GamePass";
 import Addons from "../../components/layout/minecraft/Addons";
 import CrossPlay from "../../components/layout/minecraft/CrossPlay";
+import open from "../../assets/icons/hamburger-icon.webp";
+import close from "../../assets/icons/hamburger-icon-close.png";
 
 const Minecraft = () => {
   return (
@@ -19,6 +21,8 @@ const Minecraft = () => {
         <Navbar
           text={"get minecraft"}
           className={"bg-dark-green shadow-base-button"}
+          openIcon={open}
+          closeIcon={close}
         />
       </header>
       <main>

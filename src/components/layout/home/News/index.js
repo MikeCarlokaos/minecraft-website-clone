@@ -61,12 +61,40 @@ export default class News extends Component {
       slidesToScroll: 1,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+            initialSlide: 2,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+      ],
     };
 
     return (
       <div
         style={{ backgroundImage: `url(${bgDark})` }}
-        className=" w-full h-full px-32"
+        className=" w-full h-full md:px-32"
       >
         <div className="relative w-full h-full py-20">
           <h2 className="w-full text-center tracking-[1px] text-white text-[28px] leading-[34px] font-bold mb-[50px]">

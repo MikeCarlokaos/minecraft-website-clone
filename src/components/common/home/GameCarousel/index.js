@@ -2,9 +2,9 @@ import React from "react";
 
 const GameCarousel = ({ coverImg, title, text, link }) => {
   return (
-    <div className="h-full w-full mt-3 text-center">
-      <div className="w-[220px] mx-[10%] flex flex-col justify-items-center group">
-        <div className="h-[70%] w-full mb-8">
+    <div className="h-full w-full mt-3 px-10 text-center">
+      <div className="w-full h-full flex flex-col items-center justify-items-center group md:w-[220px] ">
+        <div className="w-full h-[70%] mb-8">
           <img
             src={coverImg}
             alt={title}

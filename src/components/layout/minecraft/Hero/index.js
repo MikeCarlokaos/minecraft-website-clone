@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section className="h-full w-full">
       <nav className="w-full bg-white">
-        <ul className="w-full flex justify-center px-[12px] py-[24px] space-x-20 text-text-green font-bold text-[10px]">
+        <ul className="w-full flex justify-center px-[12px] py-[24px] space-x-8 text-text-green font-bold text-[10px] md:space-x-20">
           <li>
             <a
               href="blank"
-              className="px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
+              className="md:px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
             >
               realms
             </a>
@@ -17,7 +17,7 @@ const Hero = () => {
           <li>
             <a
               href="blank"
-              className="px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
+              className="md:px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
             >
               servers
             </a>
@@ -25,7 +25,7 @@ const Hero = () => {
           <li>
             <a
               href="blank"
-              className="px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
+              className="md:px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
             >
               marketplace
             </a>
@@ -33,7 +33,7 @@ const Hero = () => {
           <li>
             <a
               href="blank"
-              className="px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
+              className="md:px-[12px] py-[8px] uppercase hover:bg-nav-green hover:text-white"
             >
               try it free
             </a>

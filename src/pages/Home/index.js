@@ -7,7 +7,8 @@ import Hero from "../../components/layout/home/Hero";
 import Login from "../../components/layout/nav/Login";
 import Navbar from "../../components/layout/nav/Navbar";
 import News from "../../components/layout/home/News";
-import NavbarSm from "../../components/layout/nav/NavbarSm";
+import open from "../../assets/icons/hamburger-icon.webp";
+import close from "../../assets/icons/hamburger-icon-close.png";
 
 const Home = () => {
   return (
@@ -17,8 +18,9 @@ const Home = () => {
         <Navbar
           text={"get minecraft"}
           className={"bg-dark-green shadow-base-button"}
+          openIcon={open}
+          closeIcon={close}
         />
-        <NavbarSm />
       </header>
       <main>
         <Hero />

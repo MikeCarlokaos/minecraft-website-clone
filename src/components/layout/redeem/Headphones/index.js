@@ -3,11 +3,11 @@ import headphone from "../../../../assets/page/redeem/image/WardenHeadphones_Red
 
 const Headphones = () => {
   return (
-    <div className="w-full h-full p-[30px] flex items-center bg-pastel-yellow">
-      <div className="w-1/3 h-full p-5">
+    <div className="w-full h-full p-[30px] flex flex-col items-center bg-pastel-yellow md:flex-row">
+      <div className="w-full h-full flex justify-center p-5 md:w-1/3">
         <img src={headphone} alt="Warden Headphones" />
       </div>
-      <div className="w-2/3 h-full flex flex-col gap-2 p-3">
+      <div className="w-full h-full flex flex-col gap-2 p-3 md:w-2/3">
         <h3 className="text-[28px] tracking-[1px] leading-[34px] font-bold">
           redeem the warden headphones
         </h3>
@@ -28,10 +28,10 @@ const Headphones = () => {
             to download the Warden Headphones. Redeem by January 31, 2023.
           </p>
         </div>
-        <div className="w-48 h-full uppercase">
+        <div className="w-full h-full uppercase flex justify-center md:block">
           <a
             href="blank"
-            className="w-full flex text-white items-center justify-center bg-dark-green shadow-base-button h-[50px] border-2 border-ash-tertiary font-bold text-lg py-[15px] px-6 tracking-[0.54px] leading-5 hover:bg-gradient-to-b from-base-gray to-dark-gray hover:shadow-hover-button-secondary transition-all"
+            className="w-48 flex text-white items-center justify-center bg-dark-green shadow-base-button h-[50px] border-2 border-ash-tertiary font-bold text-lg py-[15px] px-6 tracking-[0.54px] leading-5 hover:bg-gradient-to-b from-base-gray to-dark-gray hover:shadow-hover-button-secondary transition-all"
           >
             unlock now
           </a>

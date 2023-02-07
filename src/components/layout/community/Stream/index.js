@@ -15,7 +15,7 @@ const Stream = () => {
         style={{ backgroundImage: `url(${bgDarkTop})` }}
         className="w-full h-[100px]"
       ></div>
-      <div className="w-[980px]  px-[15px] mx-auto">
+      <div className="w-full px-[15px] mx-auto md:w-[980px]">
         <div className="py-8">
           <h3 className="flex flex-col font-bold text-[28px] leading-[34px] tracking-[1px] mb-[12.8px] pt-[75px]">
             watch on youtube
@@ -28,7 +28,7 @@ const Stream = () => {
           <h3 className="flex flex-col font-bold text-[28px] leading-[34px] tracking-[1px] mb-[12.8px] pt-[75px]">
             watch the stream again!
           </h3>
-          <p className="w-[550px] mb-10">
+          <p className="w-full mb-10 md:w-[550px] ">
             Just because we named it Minecraft Live doesn't mean that you can't
             watch it over and over and over again whenever you want. Check out
             the 2021 edition of our annual celebration of all things Minecraft,

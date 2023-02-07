@@ -1,10 +1,12 @@
 import React from "react";
 import arrowLink from "../../../../assets/icons/link-arrow.svg";
 
-const ArticleCard = ({ coverImg, title, text, style }) => {
+const ArticleCard = ({ coverImg, title, text }) => {
   return (
-    <div className={`w-full h-full flex ${style} items-center px-20 py-10 `}>
-      <div className="w-1/2 h-stretch px-10 flex flex-col content-center">
+    <div
+      className={`w-full h-full flex flex-col-reverse items-center px-5 py-10 gap-y-3 md:flex-row md:odd:flex-row-reverse md:px-20 md:gap-y-0`}
+    >
+      <div className="w-full h-stretch px-10 flex flex-col content-center text-center md:text-start md:w-1/2">
         <h3 className="text-[28px] tracking-[1px] leading-[34px] font-bold">
           {title}
         </h3>
@@ -17,7 +19,7 @@ const ArticleCard = ({ coverImg, title, text, style }) => {
           learn more
         </a>
       </div>
-      <div className="w-1/2 px-7 ">
+      <div className="w-full px-7 md:w-1/2">
         <img src={coverImg} alt={title} />
       </div>
     </div>

@@ -13,7 +13,7 @@ const Hero = () => {
         <img
           src={bgHero}
           alt="MD Seasonal Adventures"
-          className="w-full h-full"
+          className="w-full h-full object-cover"
         />
       </div>
     </section>

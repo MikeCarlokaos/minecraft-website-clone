@@ -4,7 +4,7 @@ import Dropdown from "../../../common/minecraftLegends/DropDown";
 const Forms = () => {
   return (
     <section className="w-full h-full bg-orange-light-secondary py-16">
-      <div className="w-[1140px] h-full px-[15px] mx-auto text-[13px] leading-[20px]">
+      <div className="w-full h-full px-[15px] mx-auto text-[13px] leading-[20px] md:w-[1140px]">
         <h3 className="normal-case text-[28px] tracking-[1px] leading-[34px] font-bold mb-4">
           Get the latest Minecraft Legends news!
         </h3>

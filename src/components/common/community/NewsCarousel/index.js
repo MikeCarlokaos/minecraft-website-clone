@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsCarousel = ({ coverImg, title, text }) => {
   return (
-    <div className="h-full w-[281px] mx-auto text-black py-10">
+    <div className="h-full w-full mx-auto text-black py-10 md:w-[281px]">
       <div className=" h-full w-full text-center flex flex-col justify-center">
         <div className="relative img-container w-full">
           <img

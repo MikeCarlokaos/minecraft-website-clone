@@ -18,7 +18,7 @@ const Articles = () => {
         style={{ backgroundImage: `url(${bgDarkTop})` }}
         className="w-full h-[100px]"
       ></div>
-      <div className="w-[980px]  px-[15px] mx-auto">
+      <div className="w-full px-5 md:w-[980px] md:px-[15px] md:mx-auto">
         <div className="-mt-[25px] -mx-[15px]">{Article}</div>
       </div>
       <div

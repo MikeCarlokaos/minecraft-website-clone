@@ -2,7 +2,7 @@ import React from "react";
 
 const ContentArticle = ({ coverImg, title, text }) => {
   return (
-    <div className="w-[1140px] h-full mx-auto px-[15px] py-12">
+    <div className="w-full h-full mx-auto px-[15px] py-12 md:w-[1140px]">
       <div>
         <img src={coverImg} alt="Content SnapShot" />
       </div>

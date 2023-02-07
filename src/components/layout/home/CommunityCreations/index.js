@@ -22,12 +22,12 @@ const CommunityCreations = () => {
         style={{ backgroundImage: `url(${bgDark})` }}
         className="h-[100px] w-full"
       ></div>
-      <div className="w-[1140px] h-full px-[15px] mx-auto">
+      <div className="w-full h-full md:w-[1140px] md:px-[15px] md:mx-auto">
         <div>
           <h3 className="flex flex-col font-bold text-[28px] leading-[34px] tracking-[1px] mb-[12.8px] pt-[75px]">
             Community Creations
           </h3>
-          <p className="text-[16px] leading-[24px] px-64 mb-[20.8px]">
+          <p className="text-[16px] leading-[24px] mb-[20.8px] md:px-64">
             Discover the best add-ons, mods, and more being built by the
             incredible Minecraft community!
           </p>
@@ -45,7 +45,7 @@ const CommunityCreations = () => {
             </a>
           </div>
         </div>
-        <div className=" w-full h-full pt-[50px] pb-[75px] grid grid-cols-4 gap-[10px] ">
+        <div className=" w-full h-full pt-[50px] pb-[75px] grid grid-cols-1 justify-items-center gap-[10px] md:grid-cols-4">
           {CommunityGrid}
         </div>
         <button

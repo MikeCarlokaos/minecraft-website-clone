@@ -4,7 +4,7 @@ import bg from "../../../../assets/page/minecraft/images/cross-play.webp";
 const CrossPlay = () => {
   return (
     <section className="w-full h-full text-center bg-ash pt-5">
-      <div className="w-[1140px] h-full mx-auto p-5  object-center">
+      <div className="w-full h-full mx-auto p-5 object-center md:w-[1140px]">
         <img src={bg} alt="cross play" className="w-full" />
       </div>
       <div className="w-full h-full pb-16">

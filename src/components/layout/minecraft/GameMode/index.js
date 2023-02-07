@@ -38,7 +38,7 @@ const GameMode = () => {
           <h2 className="tracking-[1px] text-[28px] leading-[34px] font-bold">
             {play.title}
           </h2>
-          <p className="w-[550px] text-center text-[15px] leading-[20px] mt-8">
+          <p className="w-full text-center text-[15px] leading-[20px] mt-8 px-5 md:w-[550px] md:px-0">
             {play.text}
           </p>
         </div>
