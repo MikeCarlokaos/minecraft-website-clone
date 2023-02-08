@@ -10,7 +10,6 @@ const articles = [
     title: "you are the avatar!",
     text: "Master all four elements and learn new skills from Team Avatar and Team Korra, meet up with Katara, Zuko, and others, and complete quests in this element bending game.",
     button: "learn more",
-    style: "flex-row",
   },
 
   {
@@ -20,7 +19,6 @@ const articles = [
     title: "shop the holiday gift guide",
     text: "Don't miss out on exclusive Minecraft holiday merch, including cozy sweaters, mugs, stockings, ornaments, and the newest Minecraft toys!",
     button: "shop now",
-    style: "flex-row-reverse",
   },
 
   {
@@ -30,7 +28,6 @@ const articles = [
     title: "come together at the faire!",
     text: "Fauna Faire is setting up camp, bringing with it both blazing activities and fun festivities. Unite with friends and take on new challenges together.",
     button: "learn more",
-    style: "flex-row",
   },
 ];
 
