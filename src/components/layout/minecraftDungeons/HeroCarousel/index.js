@@ -63,7 +63,6 @@ export default class HeroCarousel extends Component {
   }
 
   render() {
-    const isActive = this.state.isActive;
     const settings = {
       dots: true,
       dotsClass: "hero-dots",
