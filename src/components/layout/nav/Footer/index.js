@@ -20,7 +20,7 @@ const Footer = () => {
           Follow Minecraft
         </h3>
         <div>
-          <ul className="flex align-center justify-center space-x-16 py-7 px-10">
+          <ul className="flex align-center justify-center space-x-10 md:space-x-16 py-7">
             <li>
               <a href="blank">
                 <img
@@ -228,7 +228,7 @@ const Footer = () => {
             </label>
           </div>
           <div>
-            <ul className="grid grid-cols-3 gap-x-10 px-10 text-[12px] leading-[24px] font-sans justify-items-center whitespace-nowrap md:flex md:space-x-4 ">
+            <ul className="grid grid-cols-3 gap-x-10 px-5 text-[12px] leading-[24px] font-sans justify-items-center whitespace-nowrap md:flex md:space-x-4 ">
               <li>
                 <a href="blank">Privacy and Cookies</a>
               </li>
