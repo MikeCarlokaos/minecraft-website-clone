@@ -228,7 +228,7 @@ const Footer = () => {
             </label>
           </div>
           <div>
-            <ul className="flex text-[12px] leading-[24px] font-sans space-x-2 whitespace-nowrap md:space-x-4 ">
+            <ul className="grid grid-cols-3 gap-x-10 text-[12px] leading-[24px] font-sans justify-items-center whitespace-nowrap md:flex md:space-x-4 ">
               <li>
                 <a href="blank">Privacy and Cookies</a>
               </li>
@@ -241,7 +241,7 @@ const Footer = () => {
               <li>
                 <a href="blank">About our ads</a>
               </li>
-              <li>&#169; {dateYear} Microsoft</li>
+              <li className="col-end-4">&#169; {dateYear} Microsoft</li>
             </ul>
           </div>
           <div>
